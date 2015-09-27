@@ -4,6 +4,8 @@
 // @version      1.0
 // @description  Automatically resizes the Crunchyroll Player so that it fits to width, but can fit to height if the view height is too short.
 // @author       Technizor
+// @icon    http://crunchyroll.com/favicon.ico
+// @icon64    http://crunchyroll.com/favicon.ico
 // @date         September 27, 2015
 // @include         http*://*.crunchyroll.c*/*
 // @include         http*://crunchyroll.c*/*
