@@ -17,6 +17,8 @@ SizeAdaptiveCrunchyrollPlayer = (function() {
     style: 'adaptive_style'
   };
   var selectors = {
+    messageBox: '#message_box',
+    layout: '.new_layout',
     videoPlayer: '#showmedia_video_player',
     videoBox: '#showmedia_video_box',
     videoBoxWide: '#showmedia_video_box_wide',
@@ -169,6 +171,11 @@ SizeAdaptiveCrunchyrollPlayer = (function() {
     var body = document.querySelector(selectors.mainPage);
     body.insertBefore(headerContainer, header);
     headerContainer.appendChild(header);
+
+    var messageBox = document.querySelector(selectors.messageBox);
+    var layoutDiv = document.querySelector(selectors.layout);
+    layoutDiv.insertBefore(messageBox, media);
+
 
     // Add Required Styles
     var style = newElement('style', {
